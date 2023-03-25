@@ -1,0 +1,423 @@
+@keyframes defilementMain {  0% {background-image: url("../medias/images/arriereplan/1.png"); background-size: contain;} 
+10% {background-image: url("../medias/images/arriereplan/2.png"); background-size: contain;} 
+20%{background-image: url("../medias/images/arriereplan/3.png");background-size: contain;} 
+30%{background-image: url("../medias/images/arriereplan/4.png");background-size: contain;} 
+40%{background-image: url("../medias/images/arriereplan/5.png");background-size: contain;} 
+50%{background-image: url("../medias/images/arriereplan/6.png");background-size: contain;} 
+60%{background-image: url("../medias/images/arriereplan/7.png");background-size: contain;} 
+70%{background-image: url("../medias/images/arriereplan/8.png");background-size: contain;} 
+80%{background-image: url("../medias/images/arriereplan/9.png");background-size: contain;}
+90%{background-image: url("../medias/images/arriereplan/10.png");background-size: contain;}
+100%{background-image: url("../medias/images/arriereplan/11.png");background-size: contain;}
+}     
+
+@keyframes animationPersonneDebout { 0% {background-image: url("../medias/images/personne/position/debout/1.png");  background-size: contain; background-repeat: no-repeat;} 25% {background-image: url("../medias/images/personne/position/debout/2.png");  background-size: contain; background-repeat: no-repeat;} 50% {background-image: url("../medias/images/personne/position/debout/3.png");  background-size: contain; background-repeat: no-repeat;} 75% {background-image: url("../medias/images/personne/position/debout/4.png");  background-size: contain; background-repeat: no-repeat;} 100%{background-image: url("../medias/images/personne/position/debout/3.png"); background-size: contain; background-repeat: no-repeat;}
+} 
+@keyframes animationPersonneSaut {  0% {background-image: url("../medias/images/personne/position/saut/1.png");  background-size: contain; background-repeat: no-repeat;} 5% {background-image: url("../medias/images/personne/position/saut/2.png");  background-size: contain; background-repeat: no-repeat;} 13% {background-image: url("../medias/images/personne/position/saut/3.png");  background-size: contain; background-repeat: no-repeat;} 100%{background-image: url("../medias/images/personne/position/saut/4.png"); background-size: contain; background-repeat: no-repeat;} 
+}
+@keyframes animationPersonneAccroupi {  0% {background-image: url("../medias/images/personne/position/accroupi/4.png"); background-size: contain; background-repeat: no-repeat;} 5%{background-image: url("../medias/images/personne/position/accroupi/3.png");  background-size: contain; background-repeat: no-repeat;} 14% {background-image: url("../medias/images/personne/position/accroupi/2.png");  background-size: contain; background-repeat: no-repeat;} 100%{background-image: url("../medias/images/personne/position/accroupi/1.png"); background-size: contain; background-repeat: no-repeat;}
+}
+
+@keyframes passage_de_blocA { 0% {transform: translate3d(0,0,0);}
+100% {transform: translate3d(-100vw,0,0);}
+}       
+@keyframes passage_de_blocB { 0% {transform: translate3d(0,0,0);}
+100% {transform: translate3d(-100vw,0,0);}
+}
+@keyframes passage_de_blocC { 0% {transform: translate3d(0,0,0);}
+100% {transform: translate3d(-100vw,0,0);}
+}
+
+
+div.Echec {
+    width: 99vw;
+    height: 96vh;
+    background-image: url('../medias/images/fond/echec.png');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+div.Quitter {
+    width: 99vw;
+    height: 96vh;
+    background-image:url('../medias/images/quitter.png');
+    background-size: cover; 
+}
+            div.bas div.blocB { animation : passage_de_blocB 5s linear;
+                backface-visibility: hidden;
+                position: relative; height: auto;width: auto;
+                margin-left: 67vw;
+                margin-top: 3vh;
+                margin-bottom: 2vh;
+                
+                }
+                div.bas div.blocB_enfant {
+                animation : passage_de_blocB 5s linear;
+                backface-visibility: hidden;
+                position: relative; height: auto;width: auto;
+                margin-top: 3vh;
+                margin-bottom: 2vh;
+                }
+
+            div.haut div.blocC {animation : passage_de_blocC 5s linear;
+                backface-visibility: hidden;
+                position: relative; height: auto;width: auto;
+                margin-left: 67vw;
+                margin-bottom: 3vh;
+                }
+
+                div.haut div.blocC_enfant {
+                animation : passage_de_blocC 5s linear;
+                backface-visibility: hidden;
+                position: relative; height: auto;width: auto;
+                margin-bottom: 3vh;
+                }
+
+            div.haut div.blocA { animation : passage_de_blocA 5s linear;
+            backface-visibility: hidden;
+            position: relative; height: auto;width: auto;
+            margin-bottom: 3vh;
+            }
+                div.bas div.blocA {
+                animation : passage_de_blocA 5s linear;
+                backface-visibility: hidden;
+                position: relative; height: auto;width: auto;
+                margin-top: 3vh;
+                }
+
+
+        header.header {
+            width: 99vw;
+            display: flex;
+            height: 20vh;
+            border-radius: 2vh;
+
+        }
+
+        /*Propriété concernant la div qui contient les bouttons et les bouttons*/
+        div.contenu {
+            display: flex;
+            margin: 3vw ;
+            padding-top: 1.5vw;
+        }
+            button.Debuter,button.pause, button.redemarer, button.reprendre,button.quitter,button.Supprimer {
+                background-color: olivedrab;
+                border: 1px solid white;
+                padding: 1vh;
+                margin: 0.5vh;
+                border-radius: 3px;
+                color: aliceblue;
+            }
+
+            button.parametre {
+                background-color: orangered;
+                border: 1px solid white;
+                padding: 1vh;
+                margin: 0.5vh;
+                border-radius: 3px;
+                color: azure;
+
+            }
+
+            button.Supprimer:hover {
+                background-color: red;
+                border: 1px solid white;
+                padding: 1vh;
+                margin: 0.5vh;
+                border-radius: 3px;
+                color: azure;
+            }
+                button.pause:hover, button.redemarer:hover, button.reprendre:hover,button.quitter:hover {
+                    background-color: green;
+                    border: 1px solid white;
+                    padding: 1vh;
+                    margin: 0.5vh;
+                    border-radius: 3px;
+                    cursor: wait;
+                }
+                button.parametre:hover {
+                background-color: orange;
+                border: 1px solid white;
+                padding: 1vh;
+                margin: 0.5vh;
+                border-radius: 3px;
+                color: azure;
+
+            }
+
+
+    .conteneur {
+    background-color: #242626;
+    margin: 1vh 0vw 3vh 0vw;
+    border-radius: 2vh;
+    }
+        /*Propriété concernant la div qui contient les infos et les infos meme*/
+        div.score,div.createur,div.joueur,div.difficulte,div.Nom {
+            background-color: yellowgreen;
+            margin: 3vw;
+            border-radius: 1vh;
+            width: 20vw;
+        }
+            div.score p,div.createur p,div.joueur p,div.difficulte p,div.Nom p {
+                color: aliceblue;
+                font-size: 20px;
+                text-align: center;
+                color: blue;
+                top: 0.2vh;
+                
+            }
+
+            
+
+        /*Propriété concernant le corp(le terrain de jeu ) et ses composants */
+        main.main { animation: defilementMain 5s forwards infinite;
+            width: 99vw;
+		    backface-visibility: hidden;
+            height: 70vh;
+            background-size: cover;
+            display: flex;
+            border-radius: 0vh 0vh 2vh 2vh;
+        }
+        main.NiveauTransition {
+            background-size:99vw, auto;
+            width: 99vw;
+		    backface-visibility: hidden;
+            height: 70vh;
+            background-image: url('../medias/images/fond/victoire.png');
+            background-size: cover;
+            display: flex;
+            border-radius: 0vh 0vh 2vh 2vh;
+
+        }
+
+        main.Debut {
+            background-size:99vw, auto;
+            width: 99vw;
+		    backface-visibility: hidden;
+            height: 70vh;
+            background-image: url('../medias/images/fond/debut.png');
+            background-size: cover;
+            display: flex;
+            border-radius: 0vh 0vh 2vh 2vh;
+
+        }
+
+        main.main div.personne {
+           width: 30vw;
+           height: 70vh;
+        }
+
+            main.main div.personne div.positionSaut { animation: animationPersonneSaut 10s  linear ;
+                width: 15vw;
+                height: 30vh;
+                top: 23vh;
+                left: 15vw;
+                position: fixed;
+
+            }
+
+            main.main div.personne div.positionAccroupi { animation: animationPersonneAccroupi 20s  linear ;
+                width: 15vw;
+                height: 30vh;
+                bottom: 10vh;
+                left: 8vw;
+                position: fixed;
+
+    }
+
+            main.main div.personne div.positionDebout { animation: animationPersonneDebout 1.3s linear infinite;
+                width: 20vw;
+                height: 50vh;
+                top: 31vh;
+                left: 5.5vw;
+                position: fixed;
+            }
+      
+
+            .PersonneNiveauTransition {
+                background-image: url('../medias/images/personne/transition.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20vw;
+                height: 50vh;
+                top: 31vh;
+                left: 5.5vw;
+                position: fixed;
+
+            }
+
+            .PersonneDebut {
+                background-image: url('../medias/images/personne/debut.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20vw;
+                height: 50vh;
+                top: 31vh;
+                left: 5.5vw;
+                position: fixed;
+
+            }
+
+
+
+       main.main div.les_blocs {
+            position: inherit;
+            width: 69vw;
+        }
+
+        main.main div.les_blocs div.haut {
+            padding: 0.1px;
+            height: 35vh;
+            display: flex;
+
+        }
+        main.main div.les_blocs div.bas {
+            height: 35vh;
+            padding: 0.1px;
+            display: flex;
+        }
+        div.blocB div.blocC {
+            display: flex;
+        }
+
+
+
+    footer.footer {
+        display: flex;
+        height: 0.2vh;
+        width: 99vw;
+        background-color: white;
+    } 
+    
+    div.fichier input {
+            background-color: green;
+                    border: 1px solid white;
+                    padding: 1vh;
+                    margin: 0.5vh;
+                    border-radius: 3px;
+                    cursor: default;
+        }
+       
+    div.EditerNiveau button {
+        background-color: green;
+                border: 1px solid white;
+                padding: 1vh;
+                margin: 0.5vh;
+                right: 1vw;
+                border-radius: 3px;
+                cursor: default;
+                font-size: 20px;
+    }
+
+
+
+
+
+
+
+/*Le  style de l'editeur */
+
+div.conteneurr {
+    background-color: #242626;
+    margin: 1vh 0vw 3vh 0vw;
+    border-radius: 2vh;
+    }
+ 
+
+    div.conteneurr div.ImageC input,div.conteneurr div.createur input,div.conteneurr div.ImageB input,div.conteneurr div.difficulte input,div.conteneurr div.Melody input, div.conteneurr div.Title input {
+        color: aliceblue;
+        color: black;
+        top: 0.2vh;
+        width: 9.6vw;
+        height: 3vh;
+        
+    }    div.conteneurr div.ImageC p,div.conteneurr div.createur p,div.conteneurr div.ImageB p,div.conteneurr div.difficulte p,div.conteneurr div.Melody p, div.conteneurr div.Title p {
+        color: aliceblue;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        top: 0.2vh;
+    }
+div.conteneurr div.ImageC , div.conteneurr div.createur ,div.conteneurr div.ImageB ,div.conteneurr div.difficulte ,div.conteneurr div.Melody, div.conteneurr div.Title {
+    background-color: #5990b0;
+    margin: 3vw;
+    border-radius: 1vh;
+    width: 10vw;
+
+}
+
+
+    main.textarea {
+        width: 99vw;
+        backface-visibility: hidden;
+        height: 70vh;
+         background-size: contain; background-repeat: no-repeat;
+        border-radius: 0vh 0vh 2vh 2vh;
+    }
+    main.textarea #textarea ,main.textarea textarea{
+        width: 97vw;
+        height: 65vh;
+        margin: 1vh 1vw 0vh 0.6vw;
+        bottom: 6vh;
+        border-radius: 2vh;
+        background-color: white;
+        opacity: 0.7;
+    }
+    main.textarea textarea{
+        width: 96.6vw;
+        height: 64vh;
+        margin: 0vh 0vw 0vh 0vw;
+        border-radius: 2vh;
+        background-color: white;
+        opacity: 0.7;
+        color: black;
+    }
+ 
+    footer.buttons {
+        display: flex;
+        height: 0.1vh;
+        width: 99vw;
+        background-color: white;
+        border-radius: 1vh;
+    } 
+    div.contenue {
+        display: flex;
+        padding-top: 1.5vw;
+
+    }
+
+   footer div.contenue button.AddA,footer div.contenue button.AddB,footer div.contenue button.AddC,footer div.contenue button.BlocP,footer div.contenue button.Supprimer {
+                    background-color: green;
+                    color: white;
+                    border: 1px solid white;
+                    padding: 1vh;
+                    margin: 0.5vh;
+                    border-radius: 3px;
+                    cursor: default;
+    }
+
+    footer .Nombreblocs p {
+        background-color: orange;
+        border: 1px solid white;
+        padding: 1vh;
+        margin: 0.5vh;
+        border-radius: 3px;
+        color: white;
+    }
+    .contenue .Telecharger button{
+        margin-left: 25vw;
+    }
+    .contenue .Importer {
+        margin-left: 25vw;
+    }
+    .contenue .Telecharge {
+        margin-left: 20vw;
+    }
+    footer div.contenue button.Supprimer:hover {
+        background-color: red;
+        border: 1px solid white;
+        padding: 1vh;
+        margin: 0.5vh;
+        border-radius: 3px;
+        cursor: default;
+}

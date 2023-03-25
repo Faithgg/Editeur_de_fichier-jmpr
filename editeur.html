@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editeur de Niveau</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="conteneurr">
+        <header class="header">
+            <div class="Title">
+                <p>Title</p>
+                <input type="text" maxlength="10">
+            </div>
+            <div class="createur">
+                <p>Createur:</p>
+                <input type="text" maxlength="10">
+            </div>
+            <div class="difficulte">
+                <p>Difficulty:</p>
+                <input type="text" max="12">
+            </div>
+            <div class="Melody">
+                <p>Melody:</p>
+                <input type="text" placeholder="https://">
+            </div>
+            <div class="ImageB">
+                <p>ImageB:</p>
+                <input type="text" placeholder="https://">
+            </div>
+            <div class="ImageC">
+                <p>ImageC:</p>
+                <input type="text" placeholder="https://">
+            </div>
+        </header>
+        <main class="textarea">
+            <div id="textarea">
+                <textarea  disabled ></textarea>
+            </div>
+        </main>
+        <footer class="buttons">
+            <div class="contenue">
+                <div>
+                    <button class="AddA">Add bloc A</button>
+                </div>
+                <div>
+                    <button class="AddB">Add bloc B</button>
+                </div>
+                <div>
+                    <button class="AddC">Add bloc C</button>
+                </div>
+                <div>
+                    <button class="BlocP">Personnaliser</button>
+                </div>
+
+                <div>
+                    <button class="Supprimer">Supprimer dernier bloc</button>
+                </div>
+                <div class="Nombreblocs">
+                    <p>Nombre de blocs: 0</p>
+                </div>
+                <div class="importer">
+                    <input class="Importer" type="file">
+                </div>
+                <div class="Telecharger">
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+    
+    <script src="./assets/javascript/editeur.js"></script>
+</body>
+</html>
